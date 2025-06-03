@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(28, 27, 27);
+}
+
+.todocontainer {
+  background-color: inherit;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.947);
+  background-color: rgb(25, 24, 24);
+  margin: 50px auto;
+  width: 800px;
+}
+.todocontainer h1 {
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  background: inherit;
+  color: rgb(255, 255, 255);
+  font-family: serif;
+  font-weight: 3rem;
+}
+.todocontainer .input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(25, 24, 24);
+}
+.todocontainer input {
+  background-color: rgba(255, 255, 255, 0.927);
+  height: 40px;
+  border-radius: 4px;
+  width: 37%;
+  margin: 10px;
+  border-width: 0px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.852);
+  padding: 10px 20px;
+}
+.todocontainer button {
+  color: white;
+  background-color: rgb(245, 94, 6);
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.852);
+  border-width: 0px;
+  font-family: serif;
+  font-weight: bold;
+}
+.todocontainer .listContainer {
+  margin: 20px;
+}
+.todocontainer .listContainer li {
+  background-color: rgb(25, 24, 24);
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
