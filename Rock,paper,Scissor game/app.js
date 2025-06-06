@@ -9,3 +9,11 @@
 // load game field ->ratate the stone image twice then change the img.src to new src.
 // if i=random value by computer draw.
 //and as the rule is applied apply winner rules.
+
+const stone= "https://raw.githubusercontent.com/cgcb-01/JAVASCRIPT_Project/refs/heads/main/Rock%2Cpaper%2CScissor%20game/images/Screenshot%202025-06-06%20001432.png";
+
+const scissor= "https://raw.githubusercontent.com/cgcb-01/JAVASCRIPT_Project/refs/heads/main/Rock%2Cpaper%2CScissor%20game/images/Screenshot%202025-06-06%20001900.png";
+
+const paper= "https://raw.githubusercontent.com/cgcb-01/JAVASCRIPT_Project/refs/heads/main/Rock%2Cpaper%2CScissor%20game/images/Screenshot%202025-06-06%20001814.png";
+
+const img={stone,paper,scissor};

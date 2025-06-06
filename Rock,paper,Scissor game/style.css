@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-y: hidden;
 }
 
 .header {
@@ -12,11 +13,13 @@
   color: rgb(255, 213, 1);
   text-align: center;
   margin: 20px;
+  font-family: sans-serif;
 }
 .header p {
   color: white;
   text-align: center;
-  margin: 20px;
+  margin: 10px;
+  font-family: sans-serif;
 }
 
 .gamefield {
@@ -27,7 +30,7 @@
   justify-content: space-between;
 }
 .gamefield .user {
-  width: 700px;
+  width: 49%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,6 +40,7 @@
   color: rgb(245, 5, 5);
   text-align: center;
   margin-bottom: 30px;
+  font-family: sans-serif;
 }
 .gamefield .user .gameimg {
   width: 400px;
@@ -44,7 +48,7 @@
   animation: plmove 1s infinite;
 }
 .gamefield .pc {
-  width: 600px;
+  width: 49%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,12 +58,30 @@
   color: rgb(7, 3, 244);
   text-align: center;
   margin-bottom: 30px;
+  font-family: sans-serif;
 }
 .gamefield .pc .gameimg {
   width: 400px;
   height: 400px;
   transform: scaleX(-1);
   animation: pcmove 1s infinite;
+}
+.gamefield .play {
+  border-width: 0px;
+  border-radius: 5px;
+  color: white;
+  background: green;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 40px;
+  width: 90px;
+  word-wrap: break-word;
+  height: 400px;
+  font-family: serif;
+}
+.gamefield .play:hover {
+  box-shadow: 0 0 5px rgb(115, 255, 0), 0 0 10px rgb(115, 255, 0), 0 0 10px rgb(115, 255, 0);
+  background: rgb(3, 165, 3);
 }
 
 @keyframes pcmove {
