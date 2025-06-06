@@ -41,6 +41,7 @@
 .gamefield .user .gameimg {
   width: 400px;
   height: 400px;
+  animation: plmove 1s infinite;
 }
 .gamefield .pc {
   width: 600px;
@@ -57,4 +58,38 @@
 .gamefield .pc .gameimg {
   width: 400px;
   height: 400px;
+  transform: scaleX(-1);
+  animation: pcmove 1s infinite;
+}
+
+@keyframes pcmove {
+  from {
+    transform: scaleX(-1) rotate(0deg);
+  }
+  40% {
+    transform: scaleX(-1) rotate(-10deg);
+  }
+  80% {
+    transform: scaleX(-1) rotate(10deg);
+  }
+  100% {
+    transform: scaleX(-1) rotate(0deg);
+  }
+}
+@keyframes plmove {
+  from {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  80% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.choose {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
