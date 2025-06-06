@@ -1,0 +1,47 @@
+*{
+    background-color: #0e0d0d;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.header{
+    h1{
+        color:white;
+        text-align: center;
+        margin:20px;
+    }
+    p{
+        color:white;
+        text-align:center;
+        margin:20px;
+    }
+}
+
+.gamefield{
+    display:flex;
+    flex-direction:row;
+    margin: 10px;
+    width: 100%;
+    .user{
+      width:700px;
+        h1{
+            color:white;
+            text-align:center;
+            margin:40px;
+        }
+        img{
+            width:200px;
+            height:200px;
+        }
+    }
+
+    .pc{
+      width:600px;
+        h1{
+            color:white;
+            text-align:center;
+            margin:40px;
+        }
+    }
+}

@@ -1,1 +1,44 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  background-color: #0e0d0d;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header h1 {
+  color: white;
+  text-align: center;
+  margin: 20px;
+}
+.header p {
+  color: white;
+  text-align: center;
+  margin: 20px;
+}
+
+.gamefield {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  width: 100%;
+}
+.gamefield .user {
+  width: 700px;
+}
+.gamefield .user h1 {
+  color: white;
+  text-align: center;
+  margin: 40px;
+}
+.gamefield .user img {
+  width: 200px;
+  height: 200px;
+}
+.gamefield .pc {
+  width: 600px;
+}
+.gamefield .pc h1 {
+  color: white;
+  text-align: center;
+  margin: 40px;
+}/*# sourceMappingURL=style.css.map */
