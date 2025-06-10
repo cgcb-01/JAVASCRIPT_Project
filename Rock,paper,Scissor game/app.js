@@ -17,3 +17,6 @@ const scissor= "https://raw.githubusercontent.com/cgcb-01/JAVASCRIPT_Project/ref
 const paper= "https://raw.githubusercontent.com/cgcb-01/JAVASCRIPT_Project/refs/heads/main/Rock%2Cpaper%2CScissor%20game/images/Screenshot%202025-06-06%20001814.png";
 
 const img={stone,paper,scissor};
+const play=document.querySelector(".play");
+play.addEventListener("click",chooseOp);
+
