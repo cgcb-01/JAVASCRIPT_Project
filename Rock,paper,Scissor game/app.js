@@ -20,3 +20,12 @@ const img={stone,paper,scissor};
 const play=document.querySelector(".play");
 play.addEventListener("click",chooseOp);
 
+const gamefield=document.querySelector(".gamefield");
+const choose=document.querySelector(".choose");
+
+function chooseOp()
+{
+ gamefield.style.display="none";
+ choose.style.display="flex";
+ 
+}

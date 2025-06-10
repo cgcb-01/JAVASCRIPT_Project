@@ -7,7 +7,7 @@
 }
 
 .header {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .header h1 {
   color: rgb(255, 213, 1);
@@ -55,7 +55,7 @@
   justify-content: center;
 }
 .gamefield .pc h1 {
-  color: rgb(7, 3, 244);
+  color: rgb(3, 99, 244);
   text-align: center;
   margin-bottom: 30px;
   font-family: sans-serif;
@@ -114,5 +114,38 @@
   }
 }
 .choose {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.choose p {
+  color: rgb(6, 230, 6);
+  margin-bottom: 10px;
+  font-family: serif;
+  font-size: 2rem;
+}
+.choose .imgChoice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.choose .imgChoice button {
+  margin: 10px;
+  border-color: white;
+  border-radius: 10px;
+}
+.choose .imgChoice button img {
+  width: 300px;
+  height: 300px;
+}
+.choose .exit {
+  color: white;
+  background-color: rgb(194, 4, 4);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 7px;
+  font-family: serif;
+  font-size: larger;
 }/*# sourceMappingURL=style.css.map */
