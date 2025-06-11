@@ -56,17 +56,38 @@ function chooseOp() {
       gameop(index); 
     });
   });
+
+  const exitBtn = document.querySelector('.exit');
+
+exitBtn.addEventListener("click", () => {
+  choose.style.display = "none";
+  gamefield.style.display = "flex";
+  resultDiv.style.display = "none";
+
+  // Show home screen
+  play.style.display = "inline-block";
+});
 }
 
 function gameop(i) {
   const userImg = document.querySelector(".user .gameimg");
   const pcImg = document.querySelector(".pc .gameimg");
 
-  // Reset styles
+  // Reset image classes and animations
   userImg.classList.remove("shrink");
   pcImg.classList.remove("shrink");
 
-  // Show both as stone temporarily
+  //  Force reflow to restart animation
+  userImg.style.animation = "none";
+  pcImg.style.animation = "none";
+  void userImg.offsetWidth; // Trigger reflow
+  void pcImg.offsetWidth;
+
+  //  Re-apply animation
+  userImg.style.animation = "plmove 1s infinite";
+  pcImg.style.animation = "pcmove 1s infinite";
+
+  // Showing both as stone temporarily
   userImg.src = stone;
   pcImg.src = stone;
 
@@ -81,11 +102,12 @@ function gameop(i) {
     userImg.src = img[i];
     pcImg.src = img[j];
 
-    // Shrink images
+    // Stop animation and shrink
     userImg.classList.add("shrink");
     pcImg.classList.add("shrink");
-    userImg.style.animation="none"
-    pcImg.style.animation="none"
+    userImg.style.animation = "none";
+    pcImg.style.animation = "none";
+
     // Update match count and result
     totalMatches++;
     let result = getResult(i, j);
@@ -95,18 +117,16 @@ function gameop(i) {
     resultH1.textContent = result;
     resultP.textContent = `Score: ${userWins} / ${totalMatches}`;
     resultDiv.style.display = "flex";
-
-  }, 2000);
+  }, 1000);
 
   const continueBtn = document.querySelector(".result button");
-continueBtn.addEventListener("click", () => {
-  // Hide result and show choose screen again
-  document.querySelector(".result").style.display = "none";
-  choose.style.display = "flex";
-  gamefield.style.display = "none";
-
-})
+  continueBtn.addEventListener("click", () => {
+    resultDiv.style.display = "none";
+    choose.style.display = "flex";
+    gamefield.style.display = "none";
+  })
 }
+
 
 
 function getResult(user, pc) {
@@ -120,4 +140,3 @@ function getResult(user, pc) {
   }
   return "You Win!";
 }
-
