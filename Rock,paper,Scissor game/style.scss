@@ -47,8 +47,31 @@
             height:400px;
             animation:plmove 1s infinite;
         }
-    }
+       
+}
 
+ .result {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+  min-width: 200px;
+  padding: 10px;
+
+  h1 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+
+  p {
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  }
     .pc{
       width:49%;
       display: flex;
@@ -125,7 +148,11 @@ background: green;
   }
 }
 
-
+ .gameimg.shrink {
+         width: 400px !important;
+         height: 400px !important;
+         transition: all 0.4s ease;
+}
 
 .choose
 {
