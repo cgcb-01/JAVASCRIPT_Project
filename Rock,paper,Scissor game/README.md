@@ -7,38 +7,28 @@
 
 ---
 
->  **Test your luck!** Are you feeling lucky today? Let's find out with this Rock, Paper, Scissor game made using pure **HTML**, **CSS**, **SASS**, and **JavaScript** — styled entirely from scratch with no external frameworks!
+ **Test your luck!** Are you feeling lucky today? Let's find out with this Rock, Paper, Scissor game made using pure **HTML**, **CSS**, **SASS**, and **JavaScript** — styled entirely from scratch with no external frameworks!
 
 ---
 
-## 🚀 Features
+##  Screenshots
 
--  Smooth gameplay with animations  
--  Computer makes random smart moves  
--  Real-time score tracking  
--  Fully responsive and stylish UI  
--  Play again, exit or continue seamlessly  
-
----
-
-## 📸 Screenshots
-
-### 🏠 Home Page  
+###  Home Page  
 <img src="images/Screenshot%202025-06-11%20164125.png" width="600"/>
 
 <br><br>
 
-### 🤔 Choice Making Screen  
+###  Choice Making Screen  
 <img src="images/Screenshot%202025-06-11%20164302.png" width="600"/>
 
 <br><br>
 
-### 🏆 Result Screen  
+###  Result Screen  
 <img src="images/Screenshot%202025-06-11%20164322.png" width="600"/>
 
 ---
 
-## 📂 How to Run
+##  How to Run
 
 1. Clone the repository:
    ```bash
@@ -46,3 +36,12 @@
   
 
 2. Open the index.html
+
+---
+##  Features
+
+-  Smooth gameplay with animations  
+-  Computer makes random smart moves  
+-  Real-time score tracking  
+-  Fully responsive and stylish UI  
+-  Play again, exit or continue seamlessly  
