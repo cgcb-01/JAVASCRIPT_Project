@@ -8,10 +8,10 @@ My rock paper scissor game with my own styling.
 ---
 
 # HOME PAGE
-![Home Page](images/Screenshot 2025-06-11 164125.png)
+![Home Page]("images/Screenshot 2025-06-11 164125.png")
 
 # CHOICE MAKING OPTION
-![Choice Page](images/Screenshot 2025-06-11 164302.png)
+![Choice Page]("images/Screenshot 2025-06-11 164302.png")
 
 # WON OR LOSS? IT'S RESULT TIME
-![Result Page](images/Screenshot 2025-06-11 164322.png)
+![Result Page]("images/Screenshot 2025-06-11 164322.png")
