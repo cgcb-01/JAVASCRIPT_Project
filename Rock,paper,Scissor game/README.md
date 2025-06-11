@@ -9,8 +9,12 @@ My rock paper scissor game with my own styling.
 # HOME PAGE
 ![Home Page](images/Screenshot%202025-06-11%20164125.png)
 
+---
+
 # CHOICE MAKING OPTION
 ![Choice Page](images/Screenshot%202025-06-11%20164302.png)
+
+---
 
 # WON OR LOSS? IT'S RESULT TIME
 ![Result Page](images/Screenshot%202025-06-11%20164322.png)
