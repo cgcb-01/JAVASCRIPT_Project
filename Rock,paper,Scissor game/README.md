@@ -14,7 +14,7 @@
 ##  Screenshots
 
 ###  Home Page  
-<img src="images/Screenshot%202025-06-11%20164125.png" width="600"/>
+<img src="images/Screenshot%202025-06-11%20164322.png" width="600"/>
 
 <br><br>
 
@@ -24,8 +24,7 @@
 <br><br>
 
 ###  Result Screen  
-<img src="images/Screenshot%202025-06-11%20164322.png" width="600"/>
-
+<img src="images/Screenshot%202025-06-11%20164125.png" width="600"/>
 ---
 
 ##  How to Run
