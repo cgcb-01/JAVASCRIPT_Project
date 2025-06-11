@@ -16,20 +16,35 @@ const paper = "https://raw.githubusercontent.com/cgcb-01/JAVASCRIPT_Project/refs
 
 const img = [stone, paper, scissor];
 
-// DOM references
 const play = document.querySelector(".play");
 const gamefield = document.querySelector(".gamefield");
 const choose = document.querySelector(".choose");
 const userchoice = document.querySelectorAll('.imgChoice button');
+const resultDiv = document.querySelector('.result');
+const resultH1 = resultDiv.querySelector('h1');
+const resultP = resultDiv.querySelector('p');
+const backBtn = document.querySelector('.back');
 
+let totalMatches = 0;
+let userWins = 0;
+
+// PLAY NOW button shows choices
 play.addEventListener("click", chooseOp);
 
-//Choosing Logic
+// BACK button brings back main screen
+backBtn.addEventListener("click", () => {
+  gamefield.style.display = "none";
+  choose.style.display = "none";
+  play.style.display = "inline-block";
+  resultDiv.style.display = "none";
+});
+
 function chooseOp() {
   gamefield.style.display = "none";
   choose.style.display = "flex";
+  resultDiv.style.display = "none";
 
- 
+  // Remove old listeners
   userchoice.forEach((button, index) => {
     button.replaceWith(button.cloneNode(true));
   });
@@ -43,45 +58,66 @@ function chooseOp() {
   });
 }
 
-// Main game logic
 function gameop(i) {
-  // Temporary "stone" image shown for both
-  const defaultImg = img[0]; // stone
-  const pcImg = document.querySelector(".pc .gameimg");
   const userImg = document.querySelector(".user .gameimg");
+  const pcImg = document.querySelector(".pc .gameimg");
 
-  // Set both to stone
-  pcImg.src = defaultImg;
-  userImg.src = defaultImg;
+  // Reset styles
+  userImg.classList.remove("shrink");
+  pcImg.classList.remove("shrink");
 
-  // Show gamefield immediately
+  // Show both as stone temporarily
+  userImg.src = stone;
+  pcImg.src = stone;
+
   gamefield.style.display = "flex";
   choose.style.display = "none";
   play.style.display = "none";
+  resultDiv.style.display = "none";
 
-  // After 2 seconds, show real choices
   setTimeout(() => {
     let j = Math.floor(Math.random() * 3);
-    pcImg.src = img[j];
+
     userImg.src = img[i];
-    userImg.style.animation="none";
+    pcImg.src = img[j];
+
+    // Shrink images
+    userImg.classList.add("shrink");
+    pcImg.classList.add("shrink");
+    userImg.style.animation="none"
     pcImg.style.animation="none"
-    // Optional: show result after revealing images
-    
-  }, 1000); // 2000ms = 2 seconds
-  
+    // Update match count and result
+    totalMatches++;
+    let result = getResult(i, j);
+    if (result === "You Win!") userWins++;
+
+    // Show result
+    resultH1.textContent = result;
+    resultP.textContent = `Score: ${userWins} / ${totalMatches}`;
+    resultDiv.style.display = "flex";
+
+  }, 2000);
+
+  const continueBtn = document.querySelector(".result button");
+continueBtn.addEventListener("click", () => {
+  // Hide result and show choose screen again
+  document.querySelector(".result").style.display = "none";
+  choose.style.display = "flex";
+  gamefield.style.display = "none";
+
+})
 }
 
-// Rock Paper Scissor game logic
+
 function getResult(user, pc) {
   if (user === pc) return "Draw!";
   if (
-    (user === 0 && pc === 2) ||  // rock > scissor
-    (user === 1 && pc === 0) ||  // paper > rock
-    (user === 2 && pc === 1)     // scissor > paper
+    (user === 0 && pc === 2) || 
+    (user === 1 && pc === 0) || 
+    (user === 2 && pc === 1)
   ) {
-    return "You Win!";
-  } else {
     return "You Lose!";
   }
+  return "You Win!";
 }
+
