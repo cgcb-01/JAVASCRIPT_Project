@@ -64,10 +64,11 @@ function gameop(i) {
     let j = Math.floor(Math.random() * 3);
     pcImg.src = img[j];
     userImg.src = img[i];
-
+    userImg.style.animation="none";
+    pcImg.style.animation="none"
     // Optional: show result after revealing images
     
-  }, 2000); // 2000ms = 2 seconds
+  }, 1000); // 2000ms = 2 seconds
   
 }
 
