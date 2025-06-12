@@ -14,10 +14,15 @@
   background-repeat: repeat; /* Repeat the image in both directions */
   background-size: auto; /* Keep the original size of the image */
   background-position: top left; /* Start tiling from top-left */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .wrapper h1 {
   color: rgb(47, 255, 0);
   margin: 15px;
+  margin-bottom: 70px;
   font-family: "Franklin Gothic Medium";
   background: none;
   text-align: center;
@@ -25,4 +30,26 @@
 .wrapper h1 span {
   color: white;
   background: none;
+}
+.wrapper .imgrow1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 16%;
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+.wrapper .imgrow1 img {
+  width: 10%;
+  height: 100%;
+  margin: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: transparent;
+  border-style: solid;
+  border-radius: 7px;
+  border-color: rgb(0, 0, 0);
+  border-width: 2px;
 }/*# sourceMappingURL=style.css.map */
