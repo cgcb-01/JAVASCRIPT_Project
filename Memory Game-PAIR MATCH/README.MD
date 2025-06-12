@@ -6,8 +6,8 @@ Rules of the Game
 - the correct match will remained flipped front with decreased opacity.
 
 # 1. STARTING OF THE GAME
-all the letters will be shown at the beginning of the game.
-<br>
+All the letters will be shown at the beginning of the game.
+
   <img src="./images/Screenshot 2025-06-13 010509.png" alt="Image 1" style="margin:30px 0px" />
 
 # 2. TRYING TO MATCH THE PAIR
