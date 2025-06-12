@@ -7,6 +7,7 @@ Rules of the Game
 
 # 1. STARTING OF THE GAME
 all the letters will be shown at the beginning of the game.
+<br>
   <img src="./images/Screenshot 2025-06-13 010509.png" alt="Image 1" style="margin:30px 0px" />
 
 # 2. TRYING TO MATCH THE PAIR
