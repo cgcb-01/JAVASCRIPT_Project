@@ -10,14 +10,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-
+  justify-content: first baseline;
+h1{
+    text-align: center;
+    color:white;
+    margin:5px;
+    font-size: 25px;
+}
   .gamearena {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 10px;
+    margin-bottom:0px;
     gap: 20px;
 
    .options {
@@ -30,7 +36,9 @@ body {
   border: 1px solid white;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.05);
-
+  box-shadow: 0 0 10px rgba(6, 8, 10, 0.7),
+                  0 0 20px rgba(4, 8, 11, 0.7),
+                  0 0 10px rgba(6, 11, 15, 0.7);
   /* Hide scrollbar - cross-browser */
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE 10+ */
@@ -38,7 +46,13 @@ body {
   &::-webkit-scrollbar {
     display: none; /* Chrome, Safari */
   }
-
+  h1{
+    text-align: center;
+    color:yellow;
+    margin:5px;
+    font-family:sans-serif;
+    font-size: 15px;
+  }
   img {
     height: 100px;
     width: 100px;
@@ -49,10 +63,10 @@ body {
 
     .kitchen {
       position: relative;
-      height: 100vh;
+      height: 90vh;
       width: 180vh; // or 1000px based on your layout
       background-color: black;
-      background-image: url("./images/kitchen-with-window-stove-window_889056-215788.jpg");
+      background-image: url("./images/freepik__cartoon-style-modern-kitchen-in-autumn-golden-sunl__400.jpeg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -61,14 +75,21 @@ body {
                   0 0 20px rgba(4, 8, 11, 0.7),
                   0 0 10px rgba(6, 11, 15, 0.7);
       border-radius: 8px;
-      border: 1px solid white;
+    
 
       img {
-        height: 200px;
-        width: 300px;
+        height: 150px;
+        width: 250px;
         position: absolute;
-        right: 300px;
-        bottom: 55px;
+        right: 800px;
+        bottom: 30px;
+      }
+      .img2{
+        height: 150px;
+        width: 250px;
+        position: absolute;
+        right: 800px;
+        bottom: 120px;
       }
     }
   }
