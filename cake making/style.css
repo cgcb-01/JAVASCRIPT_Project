@@ -1,0 +1,59 @@
+body {
+  background-color: #000;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: url("https://i.pinimg.com/736x/2b/bd/14/2bbd1493771162027939c305e952c748.jpg");
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .gamearena {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  background-color: transparent;
+}
+body .gamearena .options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: scroll;
+}
+body .gamearena .options img {
+  height: 100px;
+  width: 100px;
+}
+body .gamearena div {
+  height: 95vh;
+  width: 170vh;
+  background-color: black;
+  background-image: url("./images/kitchen-with-window-stove-window_889056-215788.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(6, 8, 10, 0.7), 0 0 20px rgba(4, 8, 11, 0.7), 0 0 10px rgba(6, 11, 15, 0.7);
+  border-radius: 8px;
+  border: 1px solid white;
+}
+body .gamearena div img {
+  height: 200px;
+  width: 300px;
+  right: 300px;
+  bottom: 55px;
+  position: absolute;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}/*# sourceMappingURL=style.css.map */
