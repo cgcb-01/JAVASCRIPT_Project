@@ -64,7 +64,7 @@ body .gamearena .kitchen {
   height: 100vh;
   width: 180vh;
   background-color: black;
-  background-image: url("./images/freepik__cartoon-style-modern-kitchen-in-autumn-golden-sunl__400.jpeg");
+  background-image: url("./images/freepik__cartoon-style-modern-kitchen-during-a-rainstorm-dr__404.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -76,14 +76,14 @@ body .gamearena .kitchen img {
   height: 150px;
   width: 250px;
   position: absolute;
-  right: 800px;
+  right: 500px;
   bottom: 30px;
 }
 body .gamearena .kitchen .img2 {
   height: 150px;
   width: 250px;
   position: absolute;
-  right: 800px;
+  right: 500px;
   bottom: 120px;
 }
 
