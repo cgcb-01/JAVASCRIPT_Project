@@ -2,7 +2,7 @@
 
 Refreshing the old Purple Palace game Memories. 
 
-### HUGE DILEMMA IN BACKGROUND
+# HUGE DILEMMA IN BACKGROUND
  SO CAME UP WITH THIS OPTION LEAVING UPON THE USERS TO CHOOSE WHICH ONE THEY LIKE
 
 <img src="./images/Screenshot 2025-06-14 145053.png">
