@@ -5,104 +5,87 @@ body {
   overflow: hidden;
   background-image: url("https://i.pinimg.com/736x/2b/bd/14/2bbd1493771162027939c305e952c748.jpg");
   background-repeat: repeat;
-  background-size: auto;
-  background-position: top left;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: first baseline;
-h1{
-    text-align: center;
-    color:white;
-    margin:5px;
-    font-size: 25px;
+  justify-content: start;
 }
-  .gamearena {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    margin-bottom:0px;
-    gap: 20px;
-    
-   .options {
+
+h1 {
+  text-align: center;
+  color: yellow;
+  font-family: sans-serif;
+  font-size: 15px;
+  margin: 5px;
+}
+
+.gamearena {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  margin: 10px;
+  gap: 20px;
+}
+
+.options {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
   max-height: 100vh;
   overflow-y: auto;
-  padding: 5px;
+  padding: 10px;
   border: 1px solid white;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 0 10px rgba(6, 8, 10, 0.7),
-                  0 0 20px rgba(4, 8, 11, 0.7),
-                  0 0 10px rgba(6, 11, 15, 0.7);
-  /* Hide scrollbar - cross-browser */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
-  &::-webkit-scrollbar {
-    display: none; /* Chrome, Safari */
-  }
-  h1{
-    text-align: center;
-    color:yellow;
-    margin:5px;
-    font-family:sans-serif;
-    font-size: 15px;
-  }
-  img {
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    border-radius: 6px;
-  }
+  box-shadow: 0 0 10px rgba(6, 8, 10, 0.7);
 }
 
-    .kitchen {
-      position: relative;
-      height: 100vh;
-      width: 180vh; // or 1000px based on your layout
-      background-color: black;
-      background-image: url("./images/freepik__cartoon-style-modern-kitchen-during-a-rainstorm-dr__404.jpeg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      overflow: hidden;
-      box-shadow: 0 0 10px rgba(6, 8, 10, 0.7),
-                  0 0 20px rgba(4, 8, 11, 0.7),
-                  0 0 10px rgba(6, 11, 15, 0.7);
-      border-radius: 8px;
-    
-
-      img {
-        height: 150px;
-        width: 250px;
-        position: absolute;
-        right: 500px;
-        bottom: 5px;
-      }
-      .img2{
-        height: 150px;
-        width: 250px;
-        position: absolute;
-        right: 500px;
-        bottom: 90px;
-      }
-      .img3{
-        height: 90px;
-        width: 250px;
-        position: absolute;
-        right: 495px;
-        bottom: 150px;
-      }
-    }
-  }
+.options img {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.kitchen {
+  position: relative;
+  height: 100vh;
+  width: 180vh;
+  background-image: url("./images/freepik__cartoon-style-modern-kitchen-during-a-rainstorm-dr__404.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(6, 8, 10, 0.7);
+}
+
+.kitchen .poster {
+  position: absolute;
+  bottom: 0;
+  right: 500px;
+  height: 100px;
+  width: 250px;
+}
+
+.layer {
+  position: absolute;
+  right: 500px;
+  width: 250px;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+/* Separate specific heights for layer types */
+.layer.cake {
+  height: 150px;
+}
+
+.layer.cream {
+  height: 90px;
 }
