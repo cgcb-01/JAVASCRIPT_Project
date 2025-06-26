@@ -1,8 +1,7 @@
-
 const kitchen = document.getElementById("kitchen");
-let cakeBottom = 20;
+let cakeBottom = 20; // Initial bottom position for the first layer
 
-document.querySelectorAll(".ingredient").forEach(img => {
+document.querySelectorAll(".ingredient").forEach((img) => {
   img.addEventListener("click", () => {
     const newLayer = document.createElement("img");
     newLayer.src = img.src;
@@ -15,7 +14,7 @@ document.querySelectorAll(".ingredient").forEach(img => {
     } else {
       newLayer.classList.add("cake");
       newLayer.style.bottom = cakeBottom + "px";
-      cakeBottom += 70; 
+      cakeBottom += 70;
     }
 
     kitchen.appendChild(newLayer);

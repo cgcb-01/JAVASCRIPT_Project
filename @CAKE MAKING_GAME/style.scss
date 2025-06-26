@@ -11,12 +11,13 @@ body {
   justify-content: flex-start; // changed from space-around
 
   // ✅ Proper spacing for main heading
+
   h1 {
     text-align: center;
     color: white;
     font-family: sans-serif;
     font-size: 20px; // slightly larger
-    margin: 10px 0 10px 0; 
+    margin: 10px 0 10px 0;
   }
 
   .gamearena {
@@ -37,9 +38,8 @@ body {
     border: 1px solid white;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 0 10px rgba(6, 8, 10, 0.7),
-                0 0 20px rgba(4, 8, 11, 0.7),
-                0 0 10px rgba(6, 11, 15, 0.7);
+    box-shadow: 0 0 10px rgba(6, 8, 10, 0.7), 0 0 20px rgba(4, 8, 11, 0.7),
+      0 0 10px rgba(6, 11, 15, 0.7);
 
     scrollbar-width: none;
     -ms-overflow-style: none;
