@@ -30,12 +30,6 @@
         }
       },
       {
-        "scope": "variable.other.readwrite.js",
-        "settings": {
-          "foreground": "#ffce6c" // orange vars
-        }
-      },
-      {
         "scope": [
           "comment.line.double-slash.js", // for JS //
           "comment.block.documentation.jsdoc", // for /** */
@@ -69,7 +63,16 @@
           "meta.property-name.scss"
         ],
         "settings": {
-          "foreground": "#00ffdd" // deep sky blue or any you like
+          "foreground": "#5ad3ff" // deep sky blue or any you like
+        }
+      },
+      {
+        "scope": [
+          "source.css constant.numeric",
+          "source.scss constant.numeric"
+        ],
+        "settings": {
+          "foreground": "#f6f3f3" // dull white, or use #ffffff for pure white
         }
       }
     ]
