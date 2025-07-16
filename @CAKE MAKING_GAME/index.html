@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Cake Layering Game" />
     <title>Cake Layering Game</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>MAKE YOUR DELICIOUS CAKE</h1>
     <div class="gamearena">
+      <button class="undo-button" id="undoBtn">Undo</button>
+
       <div class="options">
         <!--Cake layers added-->
         <h1>CAKES</h1>
@@ -23,17 +27,10 @@
           src="./images/Untitled21_20250616160334.png"
           alt="cake2"
         />
-
         <img
-          class="ingredient cream"
-          src="./images/WhatsApp_Image_2025-06-14_at_11.04.38_f228cbfb-removebg-preview.png"
-          alt="cream1"
-        />
-
-        <img
-          class="ingredient cream"
-          src="./images/WhatsApp_Image_2025-06-14_at_11.04.36_8a0cd000-removebg-preview.png"
-          alt="cream1"
+          class="ingredient cake"
+          src="./images/Screenshot 2025-07-16 225026.png"
+          alt="cake2"
         />
         <!--Cream layers Added.-->
         <h1>CREAMS</h1>
@@ -62,9 +59,10 @@
           alt="cream1"
         />
       </div>
-
-      <div class="kitchen" id="kitchen">
-        <!--Here the cake layers will be added one by one as layer with JS-->
+      <div class="kitchen-wrapper">
+        <div class="kitchen" id="kitchen">
+          <!--Here the cake layers will be added one by one as layer with JS-->
+        </div>
       </div>
     </div>
 
