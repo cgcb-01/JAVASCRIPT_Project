@@ -17,6 +17,11 @@ body h1 {
   font-size: 20px;
   margin: 10px 0;
 }
+@media (max-width: 768px) {
+  body h1 {
+    font-size: 18px;
+  }
+}
 body .gamearena {
   display: flex;
   flex-direction: row;
