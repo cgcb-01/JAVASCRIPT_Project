@@ -15,15 +15,61 @@ body h1 {
   color: white;
   font-family: sans-serif;
   font-size: 20px;
-  margin: 10px 0 10px 0;
+  margin: 10px 0;
 }
 body .gamearena {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  margin: 5px;
   gap: 20px;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  body .gamearena {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 90px;
+  }
+}
+body .gamearena .kitchen-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 90vh;
+}
+@media (max-width: 768px) {
+  body .gamearena .kitchen-wrapper {
+    height: 75vh;
+    width: 100%;
+  }
+}
+body .gamearena .undo-button {
+  background-color: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  margin: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+@media (min-width: 769px) {
+  body .gamearena .undo-button {
+    position: static;
+    transform: none;
+    align-self: center;
+    margin-bottom: 10px;
+  }
 }
 body .options {
   display: flex;
@@ -51,16 +97,43 @@ body .options img {
   margin-bottom: 20px;
 }
 body .options h1 {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   text-align: center;
   color: yellow;
   font-family: sans-serif;
   font-size: 15px;
 }
+@media (max-width: 768px) {
+  body .options {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    border-radius: 0;
+    border-top: 2px solid white;
+    box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.1);
+    z-index: 999;
+  }
+  body .options h1 {
+    display: none;
+  }
+  body .options img {
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+  }
+}
 body .kitchen {
   position: relative;
   height: 90vh;
   width: 180vh;
+  max-width: 95vw;
   background-image: url("./images/ChatGPT Image Jun 17, 2025, 01_07_23 AM.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -83,4 +156,21 @@ body .kitchen .layer.cake {
 }
 body .kitchen .layer.cream {
   height: 90px;
+}
+@media (max-width: 768px) {
+  body .kitchen {
+    width: 95vw;
+    height: 75vh;
+  }
+  body .kitchen .layer {
+    right: 50%;
+    transform: translateX(50%);
+    width: 180px;
+  }
+  body .kitchen .layer.cake {
+    height: 100px;
+  }
+  body .kitchen .layer.cream {
+    height: 60px;
+  }
 }/*# sourceMappingURL=style.css.map */
