@@ -4,26 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="inputForm.css" />
   </head>
   <body>
     <form>
       <!--Class Routine-->
-      <div class="Routine">
+      <div class="routine">
         <h1>Here you Add your Routine</h1>
-        <h3 class="Subjects">Enter the Subjects:</h3>
-        <div class="ShowSubject"></div>
-        <button>Add Subjects</button>
-        <div class="SubjectDetails">
-          <p class="Subjectname" style="display: inline">
-            Enter The Subject Name:
-          </p>
-          <input type="text" />
-          <button>Done</button>
-        </div>
-        <div class="RoutineAdd">
-          <h3>Enter The Subjects for Each day</h3>
-        </div>
+        <h3>Enter The Subjects for Each Day</h3>
+        <div class="routine-table" id="routine-table"></div>
       </div>
+
       <!--Vacations-->
       <div class="vacation">
         <h1 class="heading">Any vacations You Know?</h1>
@@ -51,5 +42,6 @@
         <button>Add More</button>
       </div>
     </form>
+    <script src="inputForm.js"></script>
   </body>
 </html>
