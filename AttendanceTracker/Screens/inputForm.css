@@ -1,0 +1,52 @@
+.routine {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+.routine h1,
+.routine h3 {
+  margin-bottom: 10px;
+}
+.routine .routine-table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+.routine .routine-table .row {
+  display: table-row;
+}
+.routine .routine-table .row .cell {
+  display: table-cell;
+  border: 1px solid #ccc;
+  padding: 10px;
+  vertical-align: top;
+}
+.routine .routine-table .row .cell input {
+  display: block;
+  margin: 5px 0;
+}
+.routine .routine-table .row .cell.button-cell {
+  width: 120px;
+  text-align: center;
+}
+.routine .routine-table .row .cell.button-cell button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.routine .routine-table .row .day-cell {
+  width: 100px;
+  font-weight: bold;
+  background-color: #f3f3f3;
+}
+.routine .input-wrapper {
+  margin-top: 8px;
+}
+.routine .input-wrapper input {
+  margin-right: 5px;
+  padding: 4px;
+  width: 150px;
+}
+.routine .input-wrapper button {
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}/*# sourceMappingURL=inputForm.css.map */
