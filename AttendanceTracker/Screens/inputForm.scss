@@ -1,0 +1,63 @@
+.routine {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+
+  h1,
+  h3 {
+    margin-bottom: 10px;
+  }
+
+  .routine-table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+
+    .row {
+      display: table-row;
+
+      .cell {
+        display: table-cell;
+        border: 1px solid #ccc;
+        padding: 10px;
+        vertical-align: top;
+
+        input {
+          display: block;
+          margin: 5px 0;
+        }
+      }
+
+      .cell.button-cell {
+        width: 120px;
+        text-align: center;
+
+        button {
+          padding: 5px 10px;
+          cursor: pointer;
+        }
+      }
+
+      .day-cell {
+        width: 100px;
+        font-weight: bold;
+        background-color: #f3f3f3;
+      }
+    }
+  }
+
+  .input-wrapper {
+    margin-top: 8px;
+
+    input {
+      margin-right: 5px;
+      padding: 4px;
+      width: 150px;
+    }
+
+    button {
+      padding: 4px 8px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+  }
+}
